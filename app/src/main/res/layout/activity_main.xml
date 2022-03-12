@@ -33,8 +33,10 @@
         android:id="@+id/textView"
         android:layout_width="409dp"
         android:layout_height="575dp"
-        android:text="what can go in "
+        android:text="what can go in   --->   Aluminum Can's
+                                          Paper                                                                        Plastic Bottles                                                                                    "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="64sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
