@@ -7,6 +7,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,11 +20,19 @@ public class SUCC extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivitySuccBinding binding;
-
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_succ);
+        button = (Button) findViewById(R.id.button9);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 //        binding = ActivitySuccBinding.inflate(getLayoutInflater());
 //        setContentView(binding.getRoot());
 
