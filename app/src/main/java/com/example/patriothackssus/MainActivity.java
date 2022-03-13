@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     int papercount = 0;
     TextView helloTextView;
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     public void increasebottlecount(View view) {
         bottlecount++;
         helloTextView.setText(Integer.toString(bottlecount));
-
     }
 
     public void increaespapercount(View view) {
