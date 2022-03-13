@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int bottlecount = 0;
     int cancount = 0;
-    int papercount =0;
+    int papercount = 0;
     TextView helloTextView;
     Button button;
     @Override
@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
                 openNewActivity();
             }
         });
-         helloTextView = (TextView) findViewById(R.id.textView10);
+        helloTextView = (TextView) findViewById(R.id.textView10);
+    }
+
+    protected  void onClick(View V){
+
     }
 
     public void increasebottlecount(View view) {
