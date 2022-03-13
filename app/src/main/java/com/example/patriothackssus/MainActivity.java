@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     PieDataSet pieDataSet;
     ArrayList pieEntries;
     ArrayList PieEntryLabels;
-    int bottlecount = 0;
-    int cancount = 0;
-    int papercount = 0;
+    float bottlecount = 0;
+    float cancount = 0;
+    float papercount = 0;
     TextView helloTextView;
     Button button;
 
@@ -52,25 +52,27 @@ public class MainActivity extends AppCompatActivity {
     }
     private void getEntries() {
         pieEntries = new ArrayList<>();
-        pieEntries.add(new PieEntry(bottlecount, 0));
-        pieEntries.add(new PieEntry(cancount, 1));
-        pieEntries.add(new PieEntry(papercount, 2));
+        pieEntries.add(new PieEntry(bottlecount));
+        pieEntries.add(new PieEntry(cancount));
+        pieEntries.add(new PieEntry(cancount));
 
     }
 
     public void increasebottlecount(View view) {
         bottlecount++;
-        pieEntries.set(0,bottlecount);
+        pieEntries.set(0, new PieEntry(bottlecount));
+        pieChart.setData(pieData);
         pieChart.invalidate();
-        helloTextView.setText(Integer.toString(bottlecount));
+        helloTextView.setText(Double.toString(bottlecount));
     }
 
     public void increaespapercount(View view) {
-        papercount++;
-        pieEntries.set(2,papercount);
-        pieChart.setData(pieData);
-        pieChart.invalidate();
-        helloTextView.setText("" + papercount );
+            papercount++;
+            pieEntries.set(2, new PieEntry(papercount));
+            pieChart.setData(pieData);
+            pieChart.invalidate();
+
+        //helloTextView.setText("" + papercount );
     }
 
     public void openNewActivity(){
@@ -80,8 +82,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void increasecancount(View view) {
         cancount++;
-        pieEntries.set(1,cancount);
+        pieEntries.set(1,new PieEntry(cancount));
         pieChart.setData(pieData);
-        helloTextView.setText("" + cancount);
+        pieChart.invalidate();
+        //helloTextView.setText("" + cancount);
     }
 }
