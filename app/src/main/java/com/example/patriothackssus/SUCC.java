@@ -24,8 +24,8 @@ public class SUCC extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivitySuccBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+//        binding = ActivitySuccBinding.inflate(getLayoutInflater());
+//        setContentView(binding.getRoot());
 
 //        setSupportActionBar(binding.toolbar);
 //
