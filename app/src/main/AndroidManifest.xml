@@ -10,13 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PatriotHacksSus">
         <activity
-            android:name=".ScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.PatriotHacksSus.NoActionBar" />
-        <activity
             android:name=".ANIMATION_TEST"
             android:exported="false" />
+        <activity android:name=".FailActivity"
+        android:exported = "false"
+        android:label = "FailActivity"
+        android:theme="@style/Theme.PatriotHacksSus.NoActionBar" />
         <activity
             android:name=".SUCC"
             android:exported="false"
@@ -31,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     float papercount = 0;
     TextView helloTextView;
     Button button;
-
+    Button failbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,14 +41,21 @@ public class MainActivity extends AppCompatActivity {
         pieDataSet.setValueTextColor(Color.WHITE);
         pieDataSet.setValueTextSize(10f);
         pieDataSet.setSliceSpace(5f);
-        button = (Button) findViewById(R.id.button5);
+        button = (Button) findViewById(R.id.button6);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openNewActivity();
             }
         });
-        helloTextView = (TextView) findViewById(R.id.textView10);
+        failbutton = (Button) findViewById(R.id.button3);
+        failbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openNewActivityF();
+            }
+        });
+                helloTextView = (TextView) findViewById(R.id.textView10);
     }
     private void getEntries() {
         pieEntries = new ArrayList<>();
@@ -79,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SUCC.class);
         startActivity(intent);
     }
+    public void openNewActivityF(){
+        try{
+            Intent intent = new Intent(this, FailActivity.class);
+            startActivity(intent);
+
+        }catch (Exception e)
+        {
+            helloTextView.setText("" + e);
+        }
+   }
 
     public void increasecancount(View view) {
         cancount++;
