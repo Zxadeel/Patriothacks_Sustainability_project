@@ -54,28 +54,12 @@
         android:id="@+id/imageView7"
         android:layout_width="117dp"
         android:layout_height="143dp"
-        android:layout_marginStart="96dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/water_bottle_png_clipart" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="121dp"
-        android:layout_height="134dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/cansoda" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -135,8 +119,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="308dp"
-        android:text="Bottles"
         android:onClick="increasebottlecount"
+        android:text="Bottles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
@@ -149,8 +133,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Paper"
         android:onClick="increaespapercount"
+        android:text="Paper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -170,5 +154,28 @@
         app:layout_constraintTop_toTopOf="parent"
 
         app:layout_constraintVertical_bias="0.399" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:scaleX="0.1"
+        android:scaleY="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cansoda"
+        tools:layout_editor_absoluteX="-32dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.15"
+        android:scaleY="0.15"
+        android:translationX="-180"
+        android:translationY="-300"
+        app:srcCompat="@drawable/cansoda"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="183dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
