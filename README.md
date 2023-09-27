@@ -1,6 +1,6 @@
-# WasteSorter - An Android App for Waste Bin Placement
+# WasteSorter (2022 Patriothacks Sustainability project)
 
-WasteSorter is an Android app developed during the 2022 PatriotHacks hackathon at George Mason University. It was conceived and created by a team of four students, all participating in their first hackathon. The primary goal of this project was to assist users, particularly students, in correctly sorting waste items into the appropriate wastebins. 
+WasteSorter is an Android app developed during the 2022 PatriotHacks hackathon at George Mason University. It was conceived and created by a team of four students, all participating in our first hackathon. The primary goal of this project was to assist users, particularly students, in correctly sorting waste items into the appropriate wastebins. We imagined the project would be used in a kiosk with a way to track what items are being placed in each bin. We implemented a front-end. None of us had any experience with Android Studio or mobile app development.
 
 ## About
 
